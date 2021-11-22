@@ -8,11 +8,11 @@ def test():
      pass
 
 #test to ordenate particle's positions
-a = np.array([-3, 2, -1, 1])
+
 
 def test_ordenate():
      #a is a lsit of particle's positions
-     global a
+     a = np.array([-3, 2, -1, 1])
      n = len(a)
      t = True
      b = ordenate(a)
@@ -23,6 +23,5 @@ def test_ordenate():
      assert t
 
 def test_target():
-     global a
-     n = len(a)
-     assert target_f(a) == 3
+     a = np.array([-3, 2, -1, 1])
+     assert target_f(a) == 7
